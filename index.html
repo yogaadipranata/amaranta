@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Amaranta</title>
+    <link rel="icon" href="asset/img/amaranta.png" type="image/icon type" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
+
+    <!--Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+    />
+    <!--Asset-->
+    <link rel="stylesheet" href="asset/css/style.css" />
+  </head>
+  <body id="home">
+    <!--Header-->
+    <section id="header">
+      <nav class="navbar navbar-expand-lg navbar-dark fixed-top primary">
+        <div class="container">
+          <a class="navbar-brand fw-bold" href="#home">Amaranta</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#product1">Product</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="#contact">Contact</a>
+              </li>
+            </ul>
+            <div class="button">
+              <button type="button" class="btn btn-white me-3" data-bs-toggle="modal" data-bs-target="#loginModal">Login</button>
+              <button type="button" class="btn btn-white me-3" data-bs-toggle="modal" data-bs-target="#signupModal">Sign Up</button>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </section>
+    <!--Akhir Header-->
+
+    <!--Jumbotron-->
+    <section id="jumbotron" class="primary mt-5">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-evenly mx-auto">
+          <div class="col-md-7">
+            <h2 class="fw-bold text-light"><span id="typed" class="typedAnimation"></span></h2>
+            <p class="fs-5 text-light">Apakah kamu sudah siap menghadapi UTBK 2023? Persaingan makin ketat dan kompetisi makin berat karena yang diujikan hanya TPS saja. Yuk bareng Amaranta tembus ke Universitas impianmu!</p>
+            <button type="button" class="btn btn-outline-light btn-lg" data-bs-toggle="modal" data-bs-target="#signupModal">Daftar Sekarang!</button>
+          </div>
+          <div class="col-md-5 p-5">
+            <img src="./asset/img/jumbotron.png" alt="study" width="90%" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Akhir Jumbotron-->
+
+    <!--Product Features 1-->
+    <section id="product1">
+      <div class="container d-flex justify-content-center mt-5">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="card mb-3 border border-primary" style="max-width: 1000px">
+              <div class="row g-0 d-flex align-items-center">
+                <div class="col-md-2 d-flex justify-content-around flex-shrink-0">
+                  <img src="asset/img/logo1.png" class="img-fluid rounded" width="60%" />
+                </div>
+                <div class="col-md-10 flex-grow-1">
+                  <div class="card-body">
+                    <h5 class="card-title">Tryout dengan basis soal UTBK tahun sebelumnya</h5>
+                    <p class="card-text">Soal tryout UTBK dibuat oleh alumni PTN terbaik.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="card mb-3 border border-primary" style="max-width: 1000px">
+              <div class="row g-0 d-flex align-items-center">
+                <div class="col-md-2 d-flex justify-content-around flex-shrink-0">
+                  <img src="asset/img/logo2.png" class="img-fluid rounded" width="60%" />
+                </div>
+                <div class="col-md-10 flex-grow-1">
+                  <div class="card-body">
+                    <h5 class="card-title">Hasil tryout dinilai menggunakan sistem IRT</h5>
+                    <p class="card-text">Sistem penilaian IRT lebih mengutamakan karakteristik tiap soal.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-evenly mx-auto mt-3">
+          <div class="col-md-7">
+            <img src="./asset/img/product1.png" alt="Product Features 1" width="90%" />
+          </div>
+          <div class="col-md-5">
+            <h2 class="fw-bold">Hadapi UTBK 2023 bersama Amaranta</h2>
+            <p class="fs-5">Dengan fitur-fitur yang ditawarkan oleh Amaranta, dijamin persiapan UTBK 2023 semakin matang. Tunggu apalagi, buruan langganan sekarang!</p>
+            <button type="button" class="btn btn-purple btn-lg" data-bs-toggle="modal" data-bs-target="#signupModal">Daftar Sekarang!</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Akhir Product Features 1-->
+
+    <!--Product Features 2-->
+    <section id="product2" class="">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-evenly mx-auto mt-5 mb-33">
+          <div class="col-md-6 text-center">
+            <h2 class="fw-bold">Apa aja sih keunggulan dari Amaranta?</h2>
+            <p class="fs-5">Amaranta memiliki beberapa keunggulan. Apa saja sih keunggulannya? Berikut ini rangkumannya.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex justify-content-center">
+        <div class="row justify-content-center">
+          <div class="col-md-3 mb-3">
+            <div class="card h-100 feature shadow rounded-4" style="max-width: 400px">
+              <img src="asset/img/online.png" class="mx-auto d-block m-4 img-fluid" alt="Rangkuman Materi" width="70%" />
+              <div class="card-body text-white">
+                <h5 class="card-title fw-semibold">Pembelajaran Online</h5>
+                <p class="card-text">Pembelajaran menjadi lebih praktis dan fleksibel karena bisa mengatur waktu sesuka hati, serta menghemat biaya dan waktu kamu.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card h-100 feature shadow rounded-4" style="max-width: 400px">
+              <img src="asset/img/materi.png" class="mx-auto d-block m-4 img-fluid" alt="Rangkuman Materi" width="67%" />
+              <div class="card-body text-white">
+                <h5 class="card-title fw-semibold">Rangkuman Materi</h5>
+                <p class="card-text">Amaranta menyediakan rangkuman materi dengan desain menarik. Cocok buat kamu yang ingin review materi.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card h-100 feature shadow rounded-4" style="max-width: 400px">
+              <img src="asset/img/soal.png" class="mx-auto d-block m-4 img-fluid" alt="Rangkuman Materi" width="75%" />
+              <div class="card-body text-white">
+                <h5 class="card-title fw-semibold">Tryout UTBK dengan soal berkualitas</h5>
+                <p class="card-text">Soal dibuat oleh alumni PTN terbaik dengan sistem penilaian Item Response Theory (IRT) yang digunakan juga pada UTBK.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-3">
+            <div class="card h-100 feature shadow rounded-4" style="max-width: 400px">
+              <img src="asset/img/evaluasi.png" class="mx-auto d-block m-4 img-fluid" alt="Rangkuman Materi" width="85%" />
+              <div class="card-body text-white">
+                <h5 class="card-title fw-semibold">Evaluasi pembelajaran</h5>
+                <p class="card-text">Hasil tryout kamu akan dievaluasi dan kami akan memberikan rekomendasi materi mana saja yang harus dipelajari lebih lanjut.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Akhir Product Features 2-->
+
+    <!--About-->
+    <section id="about">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-evenly mx-auto mt-5">
+          <div class="col-md-7">
+            <h2 class="fw-bold">Apa itu Amaranta?</h2>
+            <p class="fs-5">
+              Nama Amaranta berasal dari nama bunga yang tidak pernah habis atau abadi. Platform ini ibaratkan bunga Amaranta yang abadi dan madunya selalu dicari oleh lebah. Jadi, makna dari Amaranta sendiri, yaitu sebanyak apapun orang
+              mengambil ilmu dari kami, kami tidak akan mengalami kehabisan materi pembelajaran dan siap membantu kamu meraih PTN impianmu.
+            </p>
+            <button type="button" class="btn btn-purple btn-lg" data-bs-toggle="modal" data-bs-target="#signupModal">Daftar Sekarang!</button>
+          </div>
+          <div class="col-md-5 p-5">
+            <img src="./asset/img/about.png" class="img-fluid" alt="study" width="80%" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Akhir About-->
+
+    <!--Testimoni-->
+    <section id="testimoni">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-evenly mx-auto mt-1 mb-3">
+          <div class="col-md-6 text-center">
+            <h2 class="fw-bold">Apa kata mereka?</h2>
+            <p class="fs-5">Kami telah terbukti membantu begitu banyak siswa yang akhirnya diterima di PTN unggulan. Berikut kata mereka!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex justify-content-center">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+              <div class="carousel-indicators">
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              </div>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container d-flex justify-content-center">
+                    <div class="row justify-content-center">
+                      <div class="col-md-3 mb-3">
+                        <div class="card h-100 feature shadow rounded-4" style="max-width: 400px">
+                          <img src="asset/img/people1.jpg" class="mx-auto d-block m-3 img-fluid rounded-circle" alt="Rangkuman Materi" width="50%" />
+                          <div class="card-body text-white text-center">
+                            <h5 class="card-title fw-semibold">Tirto Firdaus</h5>
+                            <p class="card-text">Amaranta adalah alasan saya ketagihan melakukan tryout untuk persiapan UTBK. Soal dari Amaranta sangatlah menantang dan membuat saya berpikir lebih tajam dalam menjawab suatu soal.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card h-100 feature shadow rounded-4" style="max-width: 400px">
+                          <img src="asset/img/people2.jpg" class="mx-auto d-block m-3 img-fluid rounded-circle" alt="Rangkuman Materi" width="50%" />
+                          <div class="card-body text-white text-center">
+                            <h5 class="card-title fw-semibold">Kasih Annisa</h5>
+                            <p class="card-text">Belajar di Amaranta seru banget dan harga langganannya terjangkau di kantong pelajar.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card h-100 feature shadow rounded-4" style="max-width: 400px">
+                          <img src="asset/img/people3.jpg" class="mx-auto d-block m-3 img-fluid rounded-circle" alt="Rangkuman Materi" width="50%" />
+                          <div class="card-body text-white text-center">
+                            <h5 class="card-title fw-semibold">Ilham Surya</h5>
+                            <p class="card-text">Berkat Amaranta, saya yang sempat masuk ranking 10 terbawah jadi punya semangat untuk mengejar PTN. Mindset yang diajarkan oleh Amaranta sangat membantu sekali.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card h-100 feature shadow rounded-4" style="max-width: 400px">
+                          <img src="asset/img/people4.jpg" class="mx-auto d-block m-3 img-fluid rounded-circle" alt="Rangkuman Materi" width="50%" />
+                          <div class="card-body text-white text-center">
+                            <h5 class="card-title fw-semibold">Alya Yuliana</h5>
+                            <p class="card-text">Amaranta sangat membantu saya dalam mempersiapkan diri untuk UTBK, ditambah lagi dengan harganya yang sangat murah sekali.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="container d-flex justify-content-center">
+                    <div class="row justify-content-center">
+                      <div class="col-md-3 mb-3">
+                        <div class="card h-100 feature shadow rounded-4" style="max-width: 400px">
+                          <img src="asset/img/people5.jpg" class="mx-auto d-block m-3 img-fluid rounded-circle" alt="Rangkuman Materi" width="50%" />
+                          <div class="card-body text-white text-center">
+                            <h5 class="card-title fw-semibold">Hidayat Harta</h5>
+                            <p class="card-text">Dengan dasar yang saya dapat dari Amaranta, saya yang awalnya SMA IPA bisa mengejar materi-materi IPS sampai akhirnya saya diterima di Ilmu Komunikasi, Universitas Indonesia.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card h-100 feature shadow rounded-4" style="max-width: 400px">
+                          <img src="asset/img/people6.jpg" class="mx-auto d-block m-3 img-fluid rounded-circle" alt="Rangkuman Materi" width="50%" />
+                          <div class="card-body text-white text-center">
+                            <h5 class="card-title fw-semibold">Mawar Putri</h5>
+                            <p class="card-text">Semenjak berlangganan Amaranta, belajar materi UTBK bisa dari mana saja dan kapan saja. Terima kasih Amaranta!</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card h-100 feature shadow rounded-4" style="max-width: 400px">
+                          <img src="asset/img/people7.jpg" class="mx-auto d-block m-3 img-fluid rounded-circle" alt="Rangkuman Materi" width="50%" />
+                          <div class="card-body text-white text-center">
+                            <h5 class="card-title fw-semibold">Guntur Mega</h5>
+                            <p class="card-text">Tryout dari Amaranta bagus banget, apalagi ditambah dengan penjelasan yang sangat mudah dipahami. Sangat membantu persiapan saya untuk menghadapi UTBK.</p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-3 mb-3">
+                        <div class="card h-100 feature shadow rounded-4" style="max-width: 400px">
+                          <img src="asset/img/people8.jpg" class="mx-auto d-block m-3 img-fluid rounded-circle" alt="Rangkuman Materi" width="50%" />
+                          <div class="card-body text-white text-center">
+                            <h5 class="card-title fw-semibold">Citra Rahma</h5>
+                            <p class="card-text">Penjelasan dari hasil tryout Amaranta sangat mudah dipahami, yang awalnya tidak paham menjadi paham. Tryout dari Amaranta sangat direkomendasikan buat kalian yang mau ikut UTBK.</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+              <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Akhir Testimoni-->
+
+    <!--Pricing-->
+    <section id="pricing">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-evenly mx-auto mt-5 mb-3">
+          <div class="col-md-6 text-center">
+            <h2 class="fw-bold">Jelajahi paket belajar dari kami!</h2>
+            <p class="fs-5">Kami menawarkan beberapa paket belajar yang tentunya ramah di kantong pelajar. Apa saja jenis paketnya? Simak penawaran di bawah!</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="container d-flex justify-content-center">
+        <div class="row justify-content-center">
+          <div class="col-md-4 mb-3">
+            <div class="card h-100 feature shadow rounded-4 text-center">
+              <div class="card-body text-white">
+                <h3 class="card-title fw-bold">Basic</h3>
+                <h2 class="price fw-semibold">Rp. 100.000<span class="fs-5">/bulan</span></h2>
+                <div class="fitur mt-3 text-center">
+                  <p class="card-text fs-5"><i class="fas fa-check text-success me-1"></i>Akses ribuan materi UTBK</p>
+                  <p class="card-text fs-5"><i class="fas fa-check text-success me-1"></i>Tryout UTBK 10x</p>
+                  <p class="card-text fs-5"><i class="fas fa-check text-success me-1"></i>Rekomendasi Belajar</p>
+                  <p class="card-text fs-5"><i class="fas fa-times text-danger me-1"></i>Diskusi Soal</p>
+                  <p class="card-text fs-5"><i class="fas fa-times text-danger me-1"></i>Rekomendasi Jurusan dan Kampus</p>
+                </div>
+                <button type="button" id="btnPaket" class="btn btn-outline-light btn-lg mt-5" onclick="paketAlert()">Pilih Paket</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100 border-card shadow rounded-4 text-center">
+              <div class="card-body">
+                <h3 class="card-title fw-bold">Standard</h3>
+                <h2 class="price fw-semibold">Rp. 200.000<span class="fs-5">/bulan</span></h2>
+                <div class="fitur mt-3 text-center">
+                  <p class="card-text fs-5"><i class="fas fa-check text-success me-1"></i>Akses ribuan materi UTBK</p>
+                  <p class="card-text fs-5"><i class="fas fa-check text-success me-1"></i>Tryout UTBK 10x</p>
+                  <p class="card-text fs-5"><i class="fas fa-check text-success me-1"></i>Rekomendasi Belajar</p>
+                  <p class="card-text fs-5"><i class="fas fa-check text-success me-1"></i>Diskusi Soal</p>
+                  <p class="card-text fs-5"><i class="fas fa-times text-danger me-1"></i>Rekomendasi Jurusan dan Kampus</p>
+                </div>
+                <button type="button" id="btnPaket" class="btn btn-purple btn-lg mt-3" onclick="paketAlert()">Pilih Paket</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4 mb-3">
+            <div class="card h-100 feature shadow rounded-4 text-center">
+              <div class="card-body text-white">
+                <h3 class="card-title fw-bold">Premium</h3>
+                <h2 class="price fw-semibold">Rp. 300.000<span class="fs-5">/bulan</span></h2>
+                <div class="fitur mt-3 text-center">
+                  <p class="card-text fs-5"><i class="fas fa-check text-success me-1"></i>Akses ribuan materi UTBK</p>
+                  <p class="card-text fs-5"><i class="fas fa-check text-success me-1"></i>Tryout UTBK 10x</p>
+                  <p class="card-text fs-5"><i class="fas fa-check text-success me-1"></i>Rekomendasi Belajar</p>
+                  <p class="card-text fs-5"><i class="fas fa-check text-success me-1"></i>Diskusi Soal</p>
+                  <p class="card-text fs-5"><i class="fas fa-check text-success me-1"></i>Rekomendasi Jurusan dan Kampus</p>
+                </div>
+                <button type="button" id="btnPaket" class="btn btn-outline-light btn-lg mt-3" onclick="paketAlert()">Pilih Paket</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Akhir Pricing-->
+
+    <!--Contact & Newsletter-->
+    <section id="contact" class="primary mt-5">
+      <div class="container">
+        <div class="row d-flex align-items-center justify-content-evenly mx-auto">
+          <div class="col-md-6 text-center m-5">
+            <h2 class="fw-bold text-light">Berlangganan dengan kami!</h2>
+            <p class="fs-5 text-light">Dapatkan informasi terkini, pembaruan, promosi, diskon, dan hal lainnya setiap minggu.</p>
+            <form onsubmit="return false">
+              <div class="mb-3">
+                <input type="email" class="form-control" id="subEmail" aria-describedby="emailNewsletter" placeholder="Masukkan email kamu di sini" name="emailNewsletter" />
+              </div>
+              <button id="subButton" type="submit" class="btn btn-outline-light btn-lg mt-3">Langganan Sekarang!</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--Akhir Contact & Newsletter-->
+
+    <!--Footer-->
+    <section id="footer">
+      <footer class="pt-5 pb-4 mt-3">
+        <div class="container text-justify text-md-left">
+          <div class="row text-justify text-md-left">
+            <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold">Amaranta</h5>
+              <hr class="mb-4" />
+              <p>Amaranta merupakan sebuah platform web yang membahas materi dan menyediakan tryout mengenai Ujian Tulis Berbasis Komputer (UTBK) untuk seleksi masuk Perguruan Tinggi Negeri (PTN).</p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold">Navigation</h5>
+              <hr class="mb-4" />
+              <p>
+                <a href="#home" class="text-purple text-decoration-none">Home</a>
+              </p>
+              <p>
+                <a href="#product1" class="text-purple text-decoration-none">Product</a>
+              </p>
+              <p>
+                <a href="#about" class="text-purple text-decoration-none">About</a>
+              </p>
+              <p>
+                <a href="#contact" class="text-purple text-decoration-none">Contact</a>
+              </p>
+            </div>
+
+            <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold">Follow Us</h5>
+              <hr class="mb-4" />
+              <p>
+                <a href="https://www.facebook.com/" class="text-purple text-decoration-none">Facebook</a>
+              </p>
+              <p>
+                <a href="https://www.instagram.com/" class="text-purple text-decoration-none">Instagram</a>
+              </p>
+              <p>
+                <a href="https://twitter.com/" class="text-purple text-decoration-none">Twitter</a>
+              </p>
+              <p>
+                <a href="https://www.youtube.com/" class="text-purple text-decoration-none">Youtube</a>
+              </p>
+            </div>
+
+            <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+              <h5 class="text-uppercase mb-4 fw-bold">Contact</h5>
+              <hr class="mb-4" />
+              <p><i class="fas fa-home mr-3"></i> Jakarta Selatan, Indonesia</p>
+              <p><i class="fas fa-envelope mr-3"></i> amaranta@gmail.com</p>
+              <p><i class="fas fa-phone mr-3"></i> +6281 2345 6789 10</p>
+            </div>
+          </div>
+
+          <hr class="mb-4" />
+          <div class="row text-center">
+            <div class="col">
+              <p>Copyright ©2022 all right by Aschal Zilham & I Wayan Yoga Adi Pranata</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </section>
+    <!--Akhir Footer-->
+
+    <!--Login Modal-->
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form onsubmit="return false">
+              <div class="mb-3">
+                <label for="username" class="form-label">Username</label>
+                <input type="text" class="form-control" id="loginUsername" aria-describedby="username" required />
+              </div>
+              <div class="mb-3">
+                <label for="loginPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="loginPassword" required />
+              </div>
+              <button id="loginButton" type="submit" class="btn bg-primary text-white btn-send" data-bs-dismiss="modal">Login</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Akhir Login Modal-->
+
+    <!--Sign Up Modal-->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-center">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="signupModalLabel">Sign Up</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form onsubmit="return false">
+              <div class="mb-3">
+                <label for="nama" class="form-label">Nama Lengkap</label>
+                <input type="text" class="form-control" id="nama" aria-describedby="nama" required />
+              </div>
+              <div class="mb-3">
+                <label for="signupEmail" class="form-label">Email</label>
+                <input type="email" class="form-control" id="signupEmail" aria-describedby="signupEmail" required />
+              </div>
+              <div class="mb-3">
+                <label for="signupUser" class="form-label">Username</label>
+                <input type="text" class="form-control" id="signupUser" aria-describedby="signupUser" required />
+              </div>
+              <div class="mb-3">
+                <label for="signupPassword" class="form-label">Password</label>
+                <input type="password" class="form-control" id="signupPassword" required />
+              </div>
+              <button id="signupButton" type="submit" class="btn bg-primary text-white btn-send" data-bs-dismiss="modal">Sign Up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--Akhir Sign Up Modal-->
+
+    <!--Script-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script src="asset/js/script.js"></script>
+  </body>
+</html>
