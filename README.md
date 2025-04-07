@@ -12,9 +12,9 @@ Amaranta Learn is a web-based landing page developed for Final Project 2 in the 
 
 ### 💻 Run Locally
 1. Clone the repository:
-```git clone https://github.com/yogaadipranata/Laundry-Labs.git```
+```git clone https://github.com/yogaadipranata/amaranta.git```
 2. Navigate to the project directory:
-```cd Laundry-Labs```
+```cd amaranta```
 3. Open index.html in your browser.
 4. Since this is a static web project built with HTML, CSS, JavaScript, and Bootstrap, no additional setup or installations are required.
 
